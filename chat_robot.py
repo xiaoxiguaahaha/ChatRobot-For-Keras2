@@ -29,7 +29,7 @@ def clean_repeat_words(words):
         if (words[index] == last_word) and (words[index] in repeat_words):
             continue
         else:
-            if not (last_word == data_process.__VOCAB__[0]):
+            if not (words[index] == data_process.__VOCAB__[0]):
                 new_words.append(words[index])
             last_word = words[index]
 
